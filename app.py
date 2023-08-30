@@ -60,7 +60,7 @@ df=return_df(gender,
 	bmi,
 	smoking_status
 	)
-	f st.button('Submit'):
+	if st.button('Submit'):
 	model=base_model()
 	preds=model.predict(df)
 	predictions=preds[0]
