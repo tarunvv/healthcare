@@ -41,7 +41,7 @@ def base_model():
 
 st.markdown(heading_style, unsafe_allow_html=True)
 gender=st.selectbox('Select your gender',['Male','Female'])
-age=st.number_input('enter your age':min_value=0)
+age=st.number_input('enter your age:',min_value=0)
 hypertension=st.slider('hypertension',0,1,0)
 heart_disease=st.slider('heart_disease',0,1,0)
 ever_married=st.selectbox('ever_married ?',['Yes','No'])
