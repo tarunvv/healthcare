@@ -41,6 +41,7 @@ def base_model():
 
 st.markdown(heading_style, unsafe_allow_html=True)
 gender=st.selectbox('Select your gender',['Male','Female'])
+age=st.number_input('enter your age':min_value=0)
 hypertension=st.slider('hypertension',0,1,0)
 heart_disease=st.slider('heart_disease',0,1,0)
 ever_married=st.selectbox('ever_married ?',['Yes','No'])
@@ -50,6 +51,7 @@ avg_glucose_level=st.number_input('enter your glucose level:', min_value=0)
 bmi=st.number_input('bmi',min_value=0)
 smoking_status=st.selectbox('smoking_status',['formerly_smoked','smokes','never_smoked','Unknown'])
 df=return_df(gender,
+     age,
 	hypertension,
 	heart_disease,
 	ever_married,
