@@ -41,7 +41,7 @@ def base_model():
 
 st.markdown(heading_style, unsafe_allow_html=True)
 gender=st.selectbox('Select your gender',['Male','Female'])
-hypertension=st.sliber('hypertension',0,1,0)
+hypertension=st.slider('hypertension',0,1,0)
 heart_disease=st.slider('heart_disease',0,1,0)
 ever_married=st.selectbox('ever_married ?',['Yes','No'])
 work_type=st.selectbox('work_type',['Private','Self-employed','Govt_job'])
