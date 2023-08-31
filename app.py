@@ -66,6 +66,6 @@ if st.button('Submit'):
 	predictions=preds[0]
 	if predictions==1:
 		st.write('stroke')
-	else predictions==0:
+	elif predictions==0:
 		st.write('not_stroke')
 	st.balloons()
