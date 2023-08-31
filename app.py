@@ -49,7 +49,7 @@ Residence_type=st.selectbox('Residence_type',['Urban','Rural'])
 avg_glucose_level=st.number_input('enter your glucose level:', min_value=0)
 bmi=st.number_input('bmi',min_value=0)
 smoking_status=st.selectbox('smoking_status',['formerly_smoked','smokes','never_smoked','Unknown'])
-df=return df(gender,
+df=return_df(gender,
 	hypertension,
 	heart_disease,
 	ever_married,
