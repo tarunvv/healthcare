@@ -36,7 +36,7 @@ def return_df(gender,
 
 
 def base_model():
-    bmodel=jb.load(os.path.join('finalised_nb_model.pkl'))
+    bmodel=jb.load(os.path.join('finalized_nb_model.pkl'))
     return bmodel
 
 st.markdown(heading_style, unsafe_allow_html=True)
