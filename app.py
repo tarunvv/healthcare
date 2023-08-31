@@ -60,12 +60,12 @@ df=return_df(gender,
 	bmi,
 	smoking_status
 	)
-	if st.button('Submit'):
-		 model=base_model()
-	    preds=model.predict(df)
-	    predictions=preds[0]
-	    if predictions==1:
-			st.write('stroke')
-	   else predictions==0:
-		   st.write('not_stroke')
-	  st.balloons()
+if st.button('Submit'):
+	model=base_model()
+	preds=model.predict(df)
+	predictions=preds[0]
+	if predictions==1:
+		st.write('stroke')
+	else predictions==0:
+		st.write('not_stroke')
+	st.balloons()
